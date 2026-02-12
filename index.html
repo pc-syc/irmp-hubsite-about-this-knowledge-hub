@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IRMP Knowledge Hub</title>
+
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 40px;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h1 {
+    margin-top: 0;
+    color: #1b4f72;
+}
+
+/* Modal styles */
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: #7b241c;
+}
+
+.modal-content p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.close-btn {
+    margin-top: 20px;
+    padding: 10px 18px;
+    background-color: #1b4f72;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #154360;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Popup Modal -->
+<div id="popupModal" class="modal">
+    <div class="modal-content">
+        <h2>Restricted Access Notice</h2>
+        <p>
+        The IRMP Knowledge Hub and Dashboards contain protected and confidential information, including Indigenous Knowledge.
+        Access is restricted to IRMP Task Team members only.
+        Content must not be shared, distributed, or reproduced beyond the Task Team without prior authorization.
+        </p>
+        <p>
+        If partners require briefing materials for their organizations, please contact
+        <strong>victoria.fleming-chartier@pc.gc.ca</strong>.
+        </p>
+        <button class="close-btn" onclick="closeModal()">Acknowledge</button>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <h1>About this Knowledge Hub</h1>
+    <p>
+        This knowledge hub presents the outcomes of the Wood Buffalo National Park World Heritage Site Action Plan.
+        It provides access to dashboards, maps, datasets, and story maps on various ecological assessment indicators,
+        offering insights into the park's ecosystem and supporting conservation efforts.
+    </p>
+</div>
+
+<script>
+function closeModal() {
+    document.getElementById("popupModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
