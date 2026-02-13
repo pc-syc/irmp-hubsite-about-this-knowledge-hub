@@ -88,6 +88,24 @@ li {
     margin-top: 5px;
 }
 
+.video-container {
+    margin-top: 40px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
 /* Modal styles */
 .modal {
     display: flex;
@@ -249,6 +267,15 @@ li {
             <img src="https://apca.maps.arcgis.com/sharing/rest/content/items/8558438bd3a84d099d6912e44b11d882/data" alt="IRMP River Flow Assessment">
         </a>
         <p>[Click to view larger image]</p>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/mJuAmZiAQsQ?si=WGSQTdfF3pDzbaal" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+        </iframe>
     </div>
 
 </div>
